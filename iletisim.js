@@ -28,7 +28,6 @@ new Vue({
         return;
       }
 
-      // Geçtiyse form gönderilir
     }
   },
   mounted() {

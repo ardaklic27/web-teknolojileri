@@ -6,152 +6,127 @@
   <title>Şehrim - Gaziantep</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigasyon Menüsü -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"> Web Sitem</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
-          <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Şehrim</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Mirasımız</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">İlgi Alanlarım</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">İletişim</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Giriş</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Sayfa Başlığı -->
-  <header class="bg-warning text-center text-white py-5">
-    <h1 class="display-4">Gaziantep'e Hoş Geldiniz!</h1>
-    <p class="lead">Tarihin, kültürün ve lezzetin buluştuğu şehir</p>
-  </header>
-
-  <!-- Gaziantep Tanıtım Kartları -->
-  <div class="container mt-5">
-
-    <div class="row g-4">
-
-      <!-- Tarih -->
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Tarihçesi</h5>
-            <p class="card-text">
-              Gaziantep, binlerce yıl boyunca medeniyetlere ev sahipliği yapmış köklü bir geçmişe sahiptir. Hititlerden Osmanlı'ya kadar uzanan bu tarihsel zenginlik, şehri adeta açık hava müzesine dönüştürür. Kurtuluş Savaşı’ndaki kahramanlık mücadelesiyle “Gazi” unvanını almıştır.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Nüfus -->
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Nüfus ve Demografi</h5>
-            <p class="card-text">
-              2024 yılı itibarıyla yaklaşık 2.2 milyonluk nüfusa sahip olan Gaziantep, Türkiye’nin en kalabalık şehirlerinden biridir. Genç ve dinamik yapısıyla sanayi, ticaret ve turizmde önemli bir rol oynar.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Ekonomi -->
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Ekonomi ve Sanayi</h5>
-            <p class="card-text">
-              Gaziantep; tekstil, halı, gıda ve plastik sanayisiyle Türkiye'nin üretim merkezlerinden biridir. Ayrıca güçlü ihracat kapasitesiyle ülke ekonomisine katkı sağlar.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Turizm -->
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Gezilecek Yerler</h5>
-            <ul>
-              <li>Gaziantep Kalesi</li>
-              <li>Zeugma Mozaik Müzesi</li>
-              <li>Emine Göğüş Mutfak Müzesi</li>
-              <li>Rumkale</li>
-              <li>Bakırcılar Çarşısı</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"> Web Sitem</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
+        <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Şehrim</a></li>
+        <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+        <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+        <li class="nav-item"><a class="nav-link" href="iletisim/iletisim.html">İletişim</a></li>
+        <li class="nav-item"><a class="nav-link" href="giris.html">Giriş</a></li>
+      </ul>
     </div>
   </div>
+</nav>
 
-<div id="gaziantepSlider" class="carousel slide mb-4" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active text-center">
-      <a href="#kale">
-        <img src="images/gaziantep-kalesi.jpg" class="slider-img" alt="Gaziantep Kalesi">
-      </a>
+<header class="bg-warning text-center text-white py-5">
+  <h1 class="display-4">Gaziantep'e Hoş Geldiniz!</h1>
+  <p class="lead">Tarihin, kültürün ve lezzetin buluştuğu şehir</p>
+</header>
+
+<div class="container mt-5">
+  <!-- Kartlar (Tarih, Nüfus, Sanayi, Gezilecek Yerler) -->
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Tarihçesi</h5>
+          <p class="card-text">Gaziantep, binlerce yıl boyunca medeniyetlere ev sahipliği yapmış köklü bir geçmişe sahiptir. Hititlerden Osmanlı'ya kadar uzanan bu tarihsel zenginlik, şehri adeta açık hava müzesine dönüştürür. Kurtuluş Savaşı’ndaki kahramanlık mücadelesiyle “Gazi” unvanını almıştır.</p>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item text-center">
-      <a href="#hayvanat">
-        <img src="images/zoo.jpg" class="slider-img" alt="Hayvanat Bahçesi">
-      </a>
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Nüfus ve Demografi</h5>
+          <p class="card-text">2024 yılı itibarıyla yaklaşık 2.2 milyonluk nüfusa sahip olan Gaziantep, Türkiye’nin en kalabalık şehirlerinden biridir. Genç ve dinamik yapısıyla sanayi, ticaret ve turizmde önemli bir rol oynar.</p>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item text-center">
-      <a href="#zeugma">
-        <img src="images/zeugma.jpg" class="slider-img" alt="Zeugma Müzesi">
-      </a>
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Ekonomi ve Sanayi</h5>
+          <p class="card-text">Gaziantep; tekstil, halı, gıda ve plastik sanayisiyle Türkiye'nin üretim merkezlerinden biridir. Ayrıca güçlü ihracat kapasitesiyle ülke ekonomisine katkı sağlar.</p>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item text-center">
-      <a href="#bakircilar">
-        <img src="images/bakırcılar.jpg" class="slider-img" alt="Bakırcılar Çarşısı">
-      </a>
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Gezilecek Yerler</h5>
+          <ul>
+            <li>Gaziantep Kalesi</li>
+            <li>Zeugma Mozaik Müzesi</li>
+            <li>Emine Göğüş Mutfak Müzesi</li>
+            <li>Rumkale</li>
+            <li>Bakırcılar Çarşısı</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- Slider kontrol butonları -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#gaziantepSlider" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Önceki</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#gaziantepSlider" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Sonraki</span>
-  </button>
 </div>
-<!-- Gaziantep Kalesi -->
-<section id="kale" class="mb-4">
-  <h3>Gaziantep Kalesi</h3>
-  <p>Gaziantep'in merkezinde yer alan kale, Roma dönemine kadar uzanan tarihi ile şehrin simgelerindendir...</p>
+
+<!-- Slider (Carousel) -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Gaziantep'in Güzellikleri</h2>
+  <div id="gaziantepSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner rounded shadow">
+      <div class="carousel-item active">
+        <img src="img/gaziantep-kalesi.jpg" class="d-block w-100" alt="Gaziantep Kalesi">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Gaziantep Kalesi</h5>
+          <p><a class="text-light" href="https://www.kulturportali.gov.tr/turkiye/gaziantep/gezilecekyer/gaziantep-kalesi" target="_blank">Detay için tıklayın</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/zoo.jpg" class="d-block w-100" alt="Hayvanat Bahçesi">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Gaziantep Hayvanat Bahçesi</h5>
+          <p><a class="text-light" href="https://www.gaziantepzoo.org/" target="_blank">Ziyaret Et</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/zeugma.jpg" class="d-block w-100" alt="Zeugma Mozaik Müzesi">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Zeugma Mozaik Müzesi</h5>
+          <p><a class="text-light" href="https://muze.gov.tr/muze-detay?SectionId=GZT01&DistId=MRK" target="_blank">Ziyaret Et</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/bakircilar.jpg" class="d-block w-100" alt="Bakırcılar Çarşısı">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Bakırcılar Çarşısı</h5>
+          <p><a class="text-light" href="https://www.kulturportali.gov.tr/turkiye/gaziantep/gezilecekyer/bakrcilar-carsisi" target="_blank">Detay</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#gaziantepSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Önceki</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#gaziantepSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Sonraki</span>
+    </button>
+  </div>
 </section>
 
-<!-- Hayvanat Bahçesi -->
-<section id="hayvanat" class="mb-4">
-  <h3>Gaziantep Hayvanat Bahçesi</h3>
-  <p>Türkiye'nin en büyük, Avrupa'nın ise sayılı büyük hayvanat bahçelerinden biridir...</p>
-</section>
-
-<!-- Zeugma Müzesi -->
-<section id="zeugma" class="mb-4">
-  <h3>Zeugma Mozaik Müzesi</h3>
-  <p>Dünyanın en büyük mozaik müzelerinden biri olan bu müze, antik Zeugma kentinden çıkarılan eserlerle ünlüdür...</p>
-</section>
-
-<!-- Bakırcılar Çarşısı -->
-<section id="bakircilar" class="mb-4">
-  <h3>Bakırcılar Çarşısı</h3>
-  <p>Gaziantep’in geleneksel el sanatlarını yansıtan bu çarşı, hem turistlerin hem de yerel halkın gözdesidir...</p>
-</section>
-
+<!-- Bootstrap JS dosyası (Sayfanın en altına, body kapanış etiketi öncesine koy) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
